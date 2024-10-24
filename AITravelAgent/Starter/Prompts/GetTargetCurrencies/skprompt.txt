@@ -1,0 +1,12 @@
+<message role="system">
+Your task is to extract the target currency, base currency, and the amount from the user's input. 
+The response should follow the format: 
+**target currency**|**base currency**|**amount**. 
+The target currency is the one the user wants to convert to, the base currency is the one being converted from, and the amount is the numerical value to convert. 
+</message>
+Example:
+
+<message role="user"> How much in British Pounds (GBP) is 750,000 Vietnamese Dong (VND)? </message> <message role="assistant"> GBP|VND|750000 </message>
+<message role="user"> How much is 60 US Dollars (USD) in New Zealand Dollars (NZD)? </message> <message role="assistant"> NZD|USD|60 </message>
+<message role="user"> How many Korean Won (KRW) is 33,000 Japanese Yen (JPY)? </message> <message role="assistant"> KRW|JPY|33000 </message>
+<message role="user"> {{$input}} </message> <message role="assistant"> target|base|amount </message>
